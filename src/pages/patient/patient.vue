@@ -13,7 +13,7 @@
         <visits></visits>
       </v-col>
     </v-row>
-
+    <add-visit-dialog></add-visit-dialog>
   </v-container>
 </template>
 
@@ -21,9 +21,10 @@
 import Navigation from './navigation'
 import Description from "@/pages/patient/description";
 import Visits from "@/pages/patient/visits";
+import AddVisitDialog from "@/pages/patient/addVisitDialog";
 
 export default {
   name: "patient",
-  components: {Visits, Description, Navigation},
+  components: {AddVisitDialog, Visits, Description, Navigation},
 }
 </script>

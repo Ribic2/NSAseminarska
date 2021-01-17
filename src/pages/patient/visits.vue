@@ -24,7 +24,7 @@
       </template>
     </v-simple-table>
     <v-divider></v-divider>
-    <v-btn class="ma-5" color="primary">Dodaj</v-btn>
+    <v-btn class="ma-5" color="primary" @click="$store.state.addVisitToggle = true">Dodaj</v-btn>
   </v-card>
 </template>
 
@@ -45,7 +45,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -51,9 +51,12 @@
       </transition>
     </v-main>
 
-    <v-footer app>
-
-    </v-footer>
+    <v-snackbar
+        v-model="$store.state.successAddVisit"
+        color="success"
+    >
+      Obisk uspešno dodan!
+    </v-snackbar>
   </v-app>
 </template>
 

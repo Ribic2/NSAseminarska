@@ -6,7 +6,9 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     deleteDialogToggle: false,
-    patientAddedToggle: false
+    patientAddedToggle: false,
+    addVisitToggle: false,
+    successAddVisit: false
   },
   mutations: {
     CHANGE_DELETE_DIALOG(state){

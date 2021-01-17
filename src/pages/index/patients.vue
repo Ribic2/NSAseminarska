@@ -32,9 +32,8 @@
           </v-toolbar>
         </template>
         <template v-slot:item.delete="{  }">
-          <v-btn icon>
+          <v-btn icon @click="deletePatient">
             <v-icon
-                @click="deletePatient"
                 big
                 color="red"
             >
@@ -44,9 +43,8 @@
         </template>
 
         <template v-slot:item.check="{ }">
-          <v-btn icon>
+          <v-btn icon @click="selectPatient()">
             <v-icon
-                @click="selectPatient()"
                 big
             >
               mdi-account
