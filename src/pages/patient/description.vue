@@ -1,5 +1,5 @@
 <template>
-  <v-card min-height="780">
+  <v-card>
     <v-card-title>Janez Novak</v-card-title>
     <v-card-text>
       <v-card-text>Starost: 50</v-card-text>

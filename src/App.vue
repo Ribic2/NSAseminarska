@@ -5,9 +5,11 @@
 <script>
 export default {
   name: 'App',
-
-  data: () => ({
-    //
-  }),
 };
 </script>
+
+<style scoped>
+  *{
+    overflow-x: hidden;
+  }
+</style>

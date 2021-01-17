@@ -28,6 +28,7 @@ const routes = [
   },
   {
     path: '/',
+    name: 'login',
     component: ()=> import('../layouts/login')
   },
 ]

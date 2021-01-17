@@ -36,6 +36,7 @@
             <v-icon
                 @click="deletePatient"
                 big
+                color="red"
             >
               mdi-delete
             </v-icon>

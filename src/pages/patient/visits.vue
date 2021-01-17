@@ -1,5 +1,5 @@
 <template>
-  <v-card min-height="780">
+  <v-card>
     <v-card-title>Prejšni pregledi</v-card-title>
     <v-simple-table>
       <template v-slot:default>
@@ -23,6 +23,8 @@
         </tbody>
       </template>
     </v-simple-table>
+    <v-divider></v-divider>
+    <v-btn class="ma-5" color="primary">Dodaj</v-btn>
   </v-card>
 </template>
 
