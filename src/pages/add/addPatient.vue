@@ -66,7 +66,7 @@ export default {
   data() {
     return {
       allergieInput: null,
-      allergies: ['Penicillin', 'Orehi'],
+      allergies: [],
       bloodTypes: [
         "O+",
         "O-",
