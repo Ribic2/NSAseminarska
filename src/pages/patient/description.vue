@@ -11,12 +11,35 @@
       <v-card-text>Tel. številka: 041 255 123</v-card-text>
       <v-card-text>Tip krvi: O+</v-card-text>
     </v-card-text>
+
+    <v-card-title>Alegrije</v-card-title>
+    <v-card-text>
+      <v-simple-table>
+        <template v-slot:default>
+          <thead>
+          <tr>
+            <th>Alergija</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr v-for="(item, index) in allergies" :key="index">
+            <td>{{ item }}</td>
+          </tr>
+          </tbody>
+        </template>
+      </v-simple-table>
+    </v-card-text>
   </v-card>
 </template>
 
 <script>
 export default {
-  name: "description"
+  name: "description",
+  data() {
+    return {
+      allergies: ['Penicillin', 'Orehi'],
+    }
+  }
 }
 </script>
 
