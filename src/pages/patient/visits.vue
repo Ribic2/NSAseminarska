@@ -15,10 +15,10 @@
         <tbody>
         <tr v-for="(visit, index) in visits" :key="index">
           <td>{{ index }}</td>
-          <td>{{ visit.why }}</td>
+          <td>{{ visit.reason }}</td>
           <td>{{ visit.found }}</td>
           <td>{{ visit.solution }}</td>
-          <td>{{ visit.when }}</td>
+          <td>{{ visit.time }}</td>
         </tr>
         </tbody>
       </template>
@@ -31,16 +31,9 @@
 <script>
 export default {
   name: "visits",
-  data() {
-    return {
-      visits: [
-        {
-          why: "Bolečina v trebuhu",
-          found: "rak",
-          solution: "kemoterapija",
-          when: "20.2.2020"
-        },
-      ]
+  computed:{
+    visits(){
+      return this.$store.state.visits
     }
   }
 }

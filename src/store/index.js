@@ -8,7 +8,8 @@ export default new Vuex.Store({
     deleteDialogToggle: false,
     patientAddedToggle: false,
     addVisitToggle: false,
-    successAddVisit: false
+    successAddVisit: false,
+    visits: []
   },
   mutations: {
     CHANGE_DELETE_DIALOG(state){
@@ -16,10 +17,15 @@ export default new Vuex.Store({
     },
     CHANGE_ADD_DIALOG(state){
       state.patientAddedToggle = !state.patientAddedToggle
+    },
+    ADD_VISIT(state, data){
+      state.visits.push(data)
     }
   },
   actions: {
-
+    addVisit({commit}, data){
+      commit('ADD_VISIT', data)
+    }
   },
   modules: {
 
